@@ -1,15 +1,23 @@
 public class mahasiswamain23 {
     public static void main(String[] args) {
+        Mahasiswa23 mhsl = new Mahasiswa23();
 
-        Mahasiswa23 mhs1 = new Mahasiswa23 ();
-        mhs1.nama = "muhammad ahli farhan";
-        mhs1.nim = "2241720171";
-        mhs1.kelas = "S1 2J";
-        mhs1.ipk = 3.55;
+        mhsl.nama = "Muhammad Ali Farhan";
+        mhsl.nim = "2241720171";
+        mhsl.kelas = "SI 2J";
+        mhsl.ipk = 3.55;
 
-        mhs1.tampilkanInformasi();
-        mhs1.ubahKelas("SI 2K");
-        mhs1.updateIPK(3.60);
-        mhs1.tampilkanInformasi();
-    
-}}
+        mhsl.tampilkanInformasi();
+        mhsl.ubahKelas("SI 2K");
+        mhsl.updateIPK(3.60);
+        mhsl.tampilkanInformasi();
+
+        Mahasiswa23 mhs2 = new Mahasiswa23 ("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+        mhs2.updateIPK(3.30);
+        mhs2.tampilkanInformasi();
+
+        Mahasiswa23 mhs3 = new Mahasiswa23 ("tyfosa", "244107060071", 3.7, "SI 1A");
+        mhs3.updateIPK(3.30);
+        mhs3.tampilkanInformasi();
+    }
+}
